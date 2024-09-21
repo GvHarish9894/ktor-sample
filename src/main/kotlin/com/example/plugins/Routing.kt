@@ -11,12 +11,14 @@ fun Application.configureRouting() {
         get("/") {
             call.respondText("Hello World!")
         }
-        get("/sample") {
+        get("/volunteer_list") {
             call.respond(
                 status = HttpStatusCode.OK,
                 message = volunteerList()
             )
         }
+
+
         post() {
 
         }
